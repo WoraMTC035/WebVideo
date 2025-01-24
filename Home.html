@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebVideo By Worawut</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #0cb2f3;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        header nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .video-player {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #000;
+        }
+        .video-player video {
+            width: 100%;
+            height: auto;
+        }
+        .product-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .product-links .product {
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .product-links .product img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .product-links .product span {
+            display: block;
+            font-size: 14px;
+            color: #555;
+        }
+        .product-links .product span.price {
+            font-weight: bold;
+            color: #333;
+        }
+        .up-next {
+            margin-top: 30px;
+        }
+        .up-next h2 {
+            margin-bottom: 20px;
+        }
+        .up-next .video-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .up-next .video {
+            flex: 1 1 calc(25% - 20px);
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .up-next .video img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .up-next .video span {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">WebVideo</div>
+        <nav>
+            <a href="#">หน้าแรก</a>
+            <a href="#">ประวัติ</a>
+            <a href="#">ค้นหา</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="video-player">
+            <video controls>
+                <source src="NOT WH.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="up-next">
+            <h2>Viral Video</h2>
+            <div class="video-list">
+                <div class="video">
+                    <img src="003.jpg" alt="Video 1">
+                    <span>Idol - YOASOBI</span>
+                    <span class="price">562M View</span>
+                </div>
+                <div class="video">
+                    <img src="004.jpg" alt="Video 2">
+                    <span>夜に駆ける - YOASOBI</span>
+                    <span class="price">278M View</span>
+                </div>
+                <div class="video">
+                    <img src="005.jpg" alt="Video 3">
+                    <span>Justin Bieber - Ghost</span>
+                    <span class="price">3.71M View</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
